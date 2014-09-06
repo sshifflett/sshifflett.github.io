@@ -1,16 +1,16 @@
+body {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	display: block;
+	background-repeat: no-repeat;
+}
+
 #header {
 	background: url('../images/stripes.png') repeat-x;
 	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
-}
-
-body {
-	background-image: url('../images/background.jpg');
-	background-size: cover;
-	display: block;
-	background-repeat: no-repeat;
 }
 
 h1 {
@@ -39,4 +39,8 @@ p {
 #download {
 	margin-left: 135px;
 	padding-top: 10px;
+}
+
+a {
+	border: 0;
 }
