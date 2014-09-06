@@ -1,0 +1,42 @@
+#header {
+	background: url('../images/stripes.png') repeat-x;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+body {
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	margin-top: 390px;
+	padding-bottom: 5px;
+	margin-left: 135px;
+}
+
+hr {
+	margin-left: 135px;
+	width: 42px;
+	color: #FD6E6E;
+	background-color: #FD6E6E;
+	height: 1px;
+	border: 0;
+}
+
+p {
+	margin-left: 135px;
+	padding-top: 5px;
+	font-family: Arial, sans-serif;
+	font-size: 19pt;
+	color: #fff;
+}
+
+#download {
+	margin-left: 135px;
+	padding-top: 10px;
+}
