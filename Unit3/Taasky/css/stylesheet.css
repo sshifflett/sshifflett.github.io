@@ -2,7 +2,6 @@ body {
 	background-image: url('../images/background.jpg');
 	background-size: cover;
 	display: block;
-	background-repeat: no-repeat;
 }
 
 #header {
@@ -14,9 +13,12 @@ body {
 }
 
 h1 {
-	margin-top: 390px;
-	padding-bottom: 5px;
-	margin-left: 135px;
+    text-indent: -9999px;
+    background: url('../images/logo-taasky.png') no-repeat;
+    white-space: nowrap;   
+    margin-top: 350px; 
+    margin-left: 135px;    
+    padding-bottom: 10px;    
 }
 
 hr {
@@ -36,11 +38,11 @@ p {
 	color: #fff;
 }
 
-#download {
-	margin-left: 135px;
-	padding-top: 10px;
-}
-
-a {
-	border: 0;
+#button {
+	text-indent: -9999px;
+    background: url('../images/btn_store.png') no-repeat;
+    white-space: nowrap;   
+    margin-left: 135px;
+    width: 274px;
+    height: 74px;
 }
