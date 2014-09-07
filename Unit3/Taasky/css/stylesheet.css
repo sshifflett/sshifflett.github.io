@@ -24,10 +24,7 @@ h1 {
 hr {
 	margin-left: 135px;
 	width: 42px;
-	color: #FD6E6E;
-	background-color: #FD6E6E;
-	height: 1px;
-	border: 0;
+	border: 1px solid #FD6E6E;
 }
 
 p {
