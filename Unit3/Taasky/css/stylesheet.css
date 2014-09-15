@@ -43,3 +43,7 @@ p {
     width: 274px;
     height: 74px;
 }
+
+a {
+	text-decoration: none;
+}
