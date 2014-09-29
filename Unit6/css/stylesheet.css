@@ -142,8 +142,9 @@ header nav ul li a {
 	background: #e8eced url('../images/herobanner.png') repeat-x center;
 }
 
-#hero-image h2 {
-	margin: 180px 0 40px 0;
+#hero-image .wrapper {
+	margin: auto;
+	margin-top: 16%;
 }
 
 .button-1 {
