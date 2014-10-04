@@ -232,8 +232,8 @@ nav a:focus {
 	padding-top: 140px;
 	float: left;
 	margin-right: 10px;
-	text-align: center;
 }
+
 
 #features ul li.feature-1 {
 	/*background: url('../images/features-icon-1.png') no-repeat top center;*/
@@ -245,13 +245,20 @@ nav a:focus {
 	/*background: url('../images/features-icon-3.png') no-repeat top center;*/
 }
 
+#features ul li h4 {
+	text-align: center;
+}
+
+#features ul li p {
+	text-align: left;
+}
+
 
 /*Primary Content*/
 
 #primary-content {
 	background-color: #f8fafa;
 	padding: 60px 0;
-	text-align: center;
 }
 
 #primary-content h3 {
@@ -260,6 +267,7 @@ nav a:focus {
 	width: 400px;
 	border-bottom: 1px solid #FCD954;
 	padding: 0 0 20px 0;
+	text-align: center;
 }
 
 #primary-content a img {
@@ -312,7 +320,6 @@ article h4 {
 
 #cta {
 	padding: 60px 0;
-	text-align: center;
 }
 
 #cta h3 {
@@ -321,6 +328,10 @@ article h4 {
 	width: 400px;
 	border-bottom: 1px solid #FCD954;
 	padding: 0 0 20px 0;
+}
+
+#cta p {
+	text-align: left;
 }
 
 .button-2 {
@@ -333,6 +344,7 @@ article h4 {
 	height: 50px;
 	font-size: 20px;
 	line-height: 50px;
+	text-align: center;
 }
 
 .button-2:hover {
