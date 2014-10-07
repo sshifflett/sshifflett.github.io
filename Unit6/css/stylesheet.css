@@ -274,48 +274,6 @@ nav a:focus {
 	margin: 20px 0;
 }
 
-/*Secondary Content*/
-
-#secondary-content {
-	padding: 60px 0;
-	text-align: center;
-}
-
-#secondary-content article {
-	width: 460px;
-	height: 270px;
-	float: left;
-	background: #f5f5f5 url('../images/bg.jpg') no-repeat left top;
-}
-
-#secondary-content article:first-child {
-	margin-right: 20px;
-}
-
-#secondary-content article .overlay {
-	background: rgba(255, 255, 255, .95);
-	height: 230px;
-	width: 190px;
-	padding: 20px;
-}
-
-article h4 {
-	border-bottom: 1px solid #FCD954;
-	padding-bottom: 20px;
-}
-
-.more-link {
-	border: 1px solid #FCD954;
-	color: #02b8dd;
-	padding: 6px 20px;
-	border-radius: 3px;
-}
-
-.more-link:hover {
-	background-color: #02b8dd;
-	color: #fff;
-}
-
 /*Call to Action*/
 
 #cta {
@@ -350,6 +308,12 @@ article h4 {
 .button-2:hover {
 	background-color: #1F2F3F;
 	color: #fff;
+}
+
+/*Form*/
+
+#form {
+	
 }
 
 /*Footer*/
