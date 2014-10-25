@@ -340,30 +340,3 @@ footer {
 	float: left;
 	margin-top: 0.625em; /* 10/16 */
 }
-
-/*Responsive Styles*/
-
-@media (min-width: 60em) {
-
-}
-
-@media (min-width: 48em) {
-
-}
-
-@media only screen and (max-width: 59.9375em) {
-
-}
-
-@media only screen and (max-width: 47.9375em) {
-
-	#hero-banner {
-		width: 100%;
-		height: 18.75em; /* 300/16 */
-		background-image: url('../images/herobanner.png') repeat-x center;
-	}
-}
-
-@media only screen and (max-width: 25em) {
-
-}
