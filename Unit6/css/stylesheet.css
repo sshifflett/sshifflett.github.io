@@ -16,13 +16,6 @@ body {
 	font-size: 14px;
 }
 
-p {
-	line-height: 20px;
-	margin-bottom: 20px;
-	font-family: 'Quicksand', sans-serif;
-	font-size: 14px;
-}
-
 h1 {
 	font-family: 'Rambla', sans-serif;
 	font-size: 38px;
@@ -35,8 +28,8 @@ h2 {
 	font-size: 32px;
 	font-weight: 700;
 	color: #444;
-	text-transform: uppercase;
 	text-align: center;
+	text-transform: uppercase;
 	margin-bottom: 20px;
 }
 
@@ -73,6 +66,13 @@ h6 {
 	font-weight: 700;
 }
 
+p {
+	line-height: 20px;
+	margin-bottom: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 14px;
+}
+
 .quote {
 	font-family: 'Handlee', cursive;
 	font-size: 16px;
@@ -104,7 +104,20 @@ small {
 .wrapper {
 	margin: 0 auto;
 	padding: 0 10px;
-	width: 940px;
+	width: 960px;
+}
+
+.heading {
+	display: block;
+	margin: 0 auto 20px auto;
+	border-bottom: 1px solid #FCD954;
+	padding: 0 0 20px 0;
+	text-align: center;
+}
+
+.imgFloat {
+	float: left;
+	padding: 10px;
 }
 
 
@@ -115,7 +128,7 @@ header {
 	background-color: #1F2F3F;
 }
 
-header .logo {
+#logo {
 	float: left;
 	margin-top: 20px;
 }
@@ -159,12 +172,12 @@ nav a:focus {
 	outline: none;
 }
 
-/* Effect 4: bottom border enlarge */
-.cl-effect-4 a {
+/* Nav Effect */
+.nav-effect a {
 	padding: 0 0 10px;
 }
 
-.cl-effect-4 a::after {
+.nav-effect a::after {
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -181,8 +194,8 @@ nav a:focus {
 	transform: translateY(-10px);
 }
 
-.cl-effect-4 a:hover::after,
-.cl-effect-4 a:focus::after {
+.nav-effect a:hover::after,
+.nav-effect a:focus::after {
 	height: 3px;
 	opacity: 1;
 	-webkit-transform: translateY(0px);
@@ -190,15 +203,15 @@ nav a:focus {
 	transform: translateY(0px);
 }
 
-/*Hero Image*/
+/*Hero Banner*/
 
-#hero-image {
+#hero-banner {
 	height: 580px;
 	padding-top: 1px;
 	background: #e8eced url('../images/herobanner.png') repeat-x center;
 }
 
-#hero-image .wrapper {
+#hero-banner .wrapper {
 	margin: 0 auto;
 }
 
@@ -221,82 +234,66 @@ nav a:focus {
 	color: #676D75;
 }
 
-/*Features*/
+/*Services*/
 
-#features ul {
+#services ul {
 	margin: 80px 0;
 }
 
-#features ul li {
+#services ul li {
 	width: 300px;
 	padding-top: 140px;
 	float: left;
 	margin-right: 10px;
 }
 
+#services ul li.services-1 {
+	background: url('../images/features-icon-1.png') no-repeat top center;
+}
+#services ul li.services-2 {
+	background: url('../images/features-icon-2.png') no-repeat top center;
+}
+#services ul li.services-3 {
+	background: url('../images/features-icon-3.png') no-repeat top center;
+}
 
-#features ul li.feature-1 {
-	/*background: url('../images/features-icon-1.png') no-repeat top center;*/
-}
-#features ul li.feature-2 {
-	/*background: url('../images/features-icon-2.png') no-repeat top center;*/
-}
-#features ul li.feature-3 {
-	/*background: url('../images/features-icon-3.png') no-repeat top center;*/
-}
-
-#features ul li h4 {
+#services h4 {
 	text-align: center;
 }
 
-#features ul li p {
+#services p {
 	text-align: left;
 }
 
 
-/*Primary Content*/
+/*Meet The Desginer*/
 
-#primary-content {
+#meet-the-designer {
 	background-color: #f8fafa;
 	padding: 60px 0;
 }
 
-#primary-content h3 {
-	display: block;
-	margin: 0 auto 20px auto;
+#meet-the-designer .heading {
 	width: 400px;
-	border-bottom: 1px solid #FCD954;
-	padding: 0 0 20px 0;
-	text-align: center;
 }
 
-#primary-content a img {
-	margin: 20px 0;
-}
-
-/*Headshot*/
-
-.headshot {
-	width: 15%;
-	height: 15%;
+#meet-the-designer img {
+	width: 10%;
+	height: 10%;
 	border-radius: 100%;
 }
 
-/*Call to Action*/
+/*Start Convo*/
 
-#cta {
+#start-convo {
 	padding: 60px 0;
 }
 
-#cta h3 {
-	display: block;
-	margin: 0 auto 20px auto;
+#start-convo .heading {
 	width: 400px;
-	border-bottom: 1px solid #FCD954;
-	padding: 0 0 20px 0;
 }
 
-#cta p {
+#start-convo p {
 	text-align: left;
 }
 
@@ -320,8 +317,35 @@ nav a:focus {
 
 /*Form*/
 
-#form {
-	
+#projectform {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.form {
+	padding: 20px 20px 20px 20px;
+}
+
+form {
+	padding: 20px;
+}
+
+.button-3 {
+	display: block;
+	margin: 0 auto;
+	border: 2px solid #1F2F3F;
+	color: #1F2F3F;
+	border-radius: 3px;
+	width: 250px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.button-3:hover {
+	background-color: #1F2F3F;
+	color: #fff;
 }
 
 /*Footer*/
@@ -335,21 +359,6 @@ footer {
 	width: 380px;
 	float: left;
 	margin-top: 10px;
-}
-
-#footer-links {
-	width: 520px;
-	float: right;
-}
-
-#footer-links ul {
-	width: 150px;
-	float: left;
-	margin-left: 20px;
-}
-
-#footer-links ul li {
-	margin: 10px 0;
 }
 
 

@@ -9,11 +9,10 @@
 </head>
  
 <body>
-
 	<header>
 		<div class="wrapper">
-			<div class="logo"><a href="index.html"><img src="images/oh-hello-convo-logo.png"></a></div>
-				<nav class="cl-effect-4">
+			<div id="logo"><a href="index.html"><img src="images/oh-hello-convo-logo.png"></a></div>
+				<nav class="nav-effect">
 					<a href="whatIdo.html">What I Do</a>
 					<a href="workwithme.html">Work With Me</a>
 				</nav>
@@ -21,14 +20,34 @@
 		</div>
 	</header>
 
-	<div id="form">
+	<div id="projectform">
 		<div class="wrapper">
-			<p>Let's Talk About Your Next Project</p>
-				<form>
-				First Name: <input type="text" name="firstname"><br>
-				Last Name: <input type="text" name="lastname"><br>
-				Email: <input type="text" name="email"><br>
-				Tell us about your exciting project..
+			<h2 class="heading">Let's Talk About Your Next Project</h2>
+		</div>
+	</div>
+
+	<div>
+		<div class="wrapper">
+        	<form action="/my-form-page" method="post">
+                <div class="form">
+                	<label for="firstname"><strong>First Name:</strong></label>
+                	<input type="text" id="firstname">
+                </div>
+                <div class="form">
+                	<label for="lastname"><strong>Last Name:</strong></label>
+                	<input type="text" id="lastname">
+                </div>
+                <div class="form">
+	            	<label for="mail"><strong>Email:</strong></label>
+	            	<input type="email" id="mail">
+	            </div>
+                <div class="form">
+               		<label for="msg"><strong>Tell me about your exciting project.</strong></label><br>
+					<textarea id="msg"></textarea>
+				</div>
+               	<div class="form
+               		<input class="button-3" name="frmSubmit" value="Start the Conversion" type="submit">
+				</div>
 			</form>
 		</div>
 	</div>
