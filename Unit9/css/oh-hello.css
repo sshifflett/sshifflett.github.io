@@ -108,11 +108,19 @@ small {
 }
 
 .heading {
-	display: block;
-	margin: -0.5em auto 1.25em auto; /* 20/16 */ /* 21/16 */
-	border-bottom: 0.0625em solid #FCD954; /* 1/16 */
-	padding: 0 0 1.25em 0; /* 20/16 */
+	margin: -0.5em auto 1.25em auto;
+	border-bottom: 0.0625em solid #FCD954;
+	padding: 0 0 1.25em 0;
 	text-align: center;
+	positon: relative;
+}
+
+.heading2 {
+	margin: 1.5em auto 1.25em auto;
+	border-bottom: 0.0625em solid #FCD954;
+	padding: 0 0 1.25em 0;
+	text-align: center;
+	position: relative;
 }
 
 .imgFloat {
@@ -303,10 +311,10 @@ nav a:focus {
 
 /*Form*/
 
-#form-heading {
-	text-align: center;
-	margin-top: 1.5625em; /* 25/16 */
+#form-heading .heading2 {
+	width: 25em;
 }
+
 
 form {
 	padding: 1.25em; /* 20/16 */
