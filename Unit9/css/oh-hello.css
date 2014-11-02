@@ -1,4 +1,4 @@
-/*Universal*/
+/* Universal */
 
 *:after,
 *::before {
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/*Basics*/
+/* Basics */
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -19,7 +19,7 @@ body {
 	clear: both;
 }
 
-/*Headings*/
+/* Headings */
 
 h1, h2, h3, h4, a {
 	font-family: 'Lato', sans-serif;
@@ -53,7 +53,7 @@ h4 {
 	text-align: center;
 }
 
-/*Text*/
+/* Text */
 
 p {
 	line-height: 1.2em;
@@ -78,7 +78,7 @@ small {
 	font-size: 0.8em;
 }
 
-/*Anchors*/
+/* Anchors */
 
 a {
 	text-decoration: none;
@@ -89,7 +89,7 @@ a:hover {
 	color: #71A670;
 }
 
-/*Buttons*/
+/* Buttons */
 
 .button-1 {
 	display: block;
@@ -143,7 +143,7 @@ a:hover {
 	text-align: center;
 }
 
-/*Header*/
+/* Header */
 
 header {
 	z-index: 100;
@@ -158,7 +158,7 @@ header {
 	margin-top: 1em;
 }
 
-/*Navigation*/
+/* Navigation */
 
 nav {
 	position: absolute;
@@ -166,18 +166,6 @@ nav {
 	width: auto;
 	float: right;
 	left: 60%;
-}
-
-@media only screen and (max-width: 400px) {
-	.ohhellologo {
-		float: none;
-		width: auto;
-	}
-
-	nav {
-		float: none;
-		width: auto;
-	}
 }
 
 nav ul {
@@ -250,7 +238,7 @@ nav a:focus {
 	text-align: left;
 }
 
-/*Meet The Desginer*/
+/* Meet The Desginer */
 
 #about-me h3{
 	padding-bottom: 1em;
@@ -265,7 +253,7 @@ nav a:focus {
 	margin: -2em 1em 2em auto;
 }
 
-/*Start Convo*/
+/* Start Convo */
 
 #workwithme h3 {
 	padding-bottom: 1em;
@@ -275,10 +263,40 @@ nav a:focus {
 	text-align: left;
 }
 
-/*Form*/
+/* Form*/
 
 form {
 	padding: 0.8em;
 }
 
-/*Footer*/
+/*  Responsive Web Design  */
+
+	/* Extra Small Devices, Phones */ 
+
+		@media only screen and (max-width : 480px) {
+		    
+		    .ohhellologo {
+				float: none;
+				width: auto;
+			}
+
+			nav {
+				float: none;
+				width: auto;
+			}
+		}
+
+	/* Custom, iPhone Retina */ 
+
+		@media only screen and (max-width : 320px) {
+			
+			.ohhellologo {
+				float: none;
+				width: auto;
+			}
+
+			nav {
+				float: none;
+				width: auto;
+			}
+		}
