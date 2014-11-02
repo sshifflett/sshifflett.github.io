@@ -12,7 +12,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .clear {
@@ -26,41 +26,41 @@ h1, h2, h3, h4, a {
 }
 
 h2 {
-	font-size: 32px;
+	font-size: 1.6em;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 1.4em;
 	font-weight: 300;
 	text-transform: uppercase;
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 1em;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #1F2F3F;
 	text-align: center;
-	margin: 0 auto 20px auto;
+	margin: 0 auto 1em auto;
 }
 
 .heading {
 	border-bottom: 2px solid #FCD954;
 	width: 400px;
-	margin: 0 auto 20px auto;
+	margin: 0 auto 1em auto;
 	text-align: center;
 }
 
 /*Text*/
 
 p {
-	line-height: 20px;
-	margin-bottom: 20px;
+	line-height: 1.2em;
+	margin-bottom: 1em;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 0.7em;
 }
 
 strong {
@@ -68,14 +68,14 @@ strong {
 }
 
 small {
-	font-size: 13px;
+	font-size: 0.65em;
 	color: #777;
 	font-style: italic;
 }
 
 .quote {
 	font-family: 'Handlee', cursive;
-	font-size: 16px;
+	font-size: 0.8em;
 }
 
 /*Anchors*/
@@ -99,7 +99,7 @@ a:hover {
 	border-radius: 3px;
  	width: 180px;
  	height: 50px;
- 	font-size: 20px;
+ 	font-size: 1em;
  	line-height: 50px;
  	margin: 0 auto;
  	margin-top: 112px;
@@ -119,10 +119,10 @@ a:hover {
 	border-radius: 3px;
  	width: 180px;
  	height: 50px;
- 	font-size: 20px;
- 	line-height: 50px;
+ 	font-size: 1em;
+ 	line-height: 2.5em;
  	margin: 0 auto;
- 	margin-top: 112px;
+ 	margin-top: 5.6em;
 	text-align: center;
 }
 
@@ -153,9 +153,9 @@ header {
 }
 
 .ohhellologo {
-	width: 300px;
+	width: 33%;
 	float: left;
-	margin-top: 20px;
+	margin-top: 1em;
 }
 
 /*Navigation*/
@@ -166,6 +166,18 @@ nav {
 	width: auto;
 	float: right;
 	left: 60%;
+}
+
+@media only screen and (max-width: 400px) {
+	.ohhellologo {
+		float: none;
+		width: auto;
+	}
+
+	nav {
+		float: none;
+		width: auto;
+	}
 }
 
 nav ul {
@@ -182,15 +194,15 @@ nav li {
 nav a {
 	position: relative;
 	display: inline-block;
-	margin: 50px 20px;
+	margin: 2.5em 1em;
  	outline: none;
  	color: #fff;
  	text-decoration: none;
  	text-transform: uppercase;
- 	letter-spacing: 1px;
+ 	letter-spacing: 0.05em;
  	font-weight: 400;
  	text-shadow: 0 0 1px rgba(255,255,255,0.3);
- 	font-size: 16px;
+ 	font-size: 0.8em;
 }
 
 nav a:hover,
@@ -201,7 +213,7 @@ nav a:focus {
 /* Nav Effect */
 
 .nav-effect a {
-	padding: 0 0 10px;
+	padding: 0 0 0.5em;
 }
 
 .nav-effect a::after {
@@ -209,7 +221,7 @@ nav a:focus {
 	top: 100%;
 	left: 0;
 	width: 100%;
-	height: 1px;
+	height: 1%;
 	background: #fff;
 	content: '';
 	opacity: 0;
@@ -223,7 +235,7 @@ nav a:focus {
 
 .nav-effect a:hover::after,
 .nav-effect a:focus::after {
-	hheight: 3px;
+	height: 3px;
 	opacity: 1;
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
@@ -231,7 +243,7 @@ nav a:focus {
 }
 
 #whatido img {
-	margin: 0 auto 30px auto;
+	margin: 0 auto 1.5em auto;
 }
 
 .center p {
@@ -241,7 +253,7 @@ nav a:focus {
 /*Meet The Desginer*/
 
 #about-me h3{
-	padding-bottom: 20px;
+	padding-bottom: 1em;
 
 }
 
@@ -250,13 +262,13 @@ nav a:focus {
 	height: 10%;
 	border-radius: 100%;
 	float: left;
-	margin: -40px 20px 40px auto;
+	margin: -2em 1em 2em auto;
 }
 
 /*Start Convo*/
 
 #workwithme h3 {
-	padding-bottom: 20px;
+	padding-bottom: 1em;
 }
 
 #workwithme p {
@@ -266,7 +278,7 @@ nav a:focus {
 /*Form*/
 
 form {
-	padding: 16px;
+	padding: 0.8em;
 }
 
 /*Footer*/
