@@ -1,18 +1,3 @@
-/* Universal */
-
-	* {
-	  -webkit-box-sizing: border-box;
-	     -moz-box-sizing: border-box;
-	          box-sizing: border-box;
-	}
-
-	*:after,
-	*::before {
-	    -webkit-box-sizing: border-box;
-	    -moz-box-sizing: border-box;
-	    box-sizing: border-box;
-	}
-
 /* Basics */
 
 	body {
@@ -36,10 +21,6 @@
 
 	.bg-alt {
 		background-color: #f8fafa;
-	}
-
-	section {
-    	padding: 100px 0;
 	}
 
 /* Headings */
@@ -79,25 +60,10 @@
 	}
 
 	.heading {
-		border-bottom: 2px solid #FCD954;
+		border-bottom: 0.1em solid #FCD954;
 		width: 400px;
 		margin: 0 auto 1em auto;
 		text-align: center;
-	}
-
-	section h2.section-heading {
-	    margin-top: 0;
-	    margin-bottom: 15px;
-    	font-size: 2em;
-	}
-
-	section h3.section-subheading {
-	    margin-bottom: 75px;
-	    text-transform: none;
-	    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-	    font-size: 16px;
-	    font-style: italic;
-	    font-weight: 400;
 	}
 
 /* Text */
@@ -115,7 +81,7 @@
 	}
 
 	small {
-		font-size: 0.65em;
+		font-size: 75%;
 		color: #777;
 		font-style: italic;
 	}
@@ -126,12 +92,8 @@
 	}
 
 	.center {
-	text-align: center;
-
-	.text-muted {
-		color: #777;
+		text-align: center;
 	}
-}
 
 /* Anchors */
 
@@ -188,33 +150,27 @@
 
 /* Header */
 
-	header {
-		z-index: 100;
-		height: 120px;
-		width: 100%;
-		background-color: #1F2F3F;
-	}
-
 	.ohhellologo {
-		width: 33%;
+		width: 75%;
 		float: left;
 		margin-top: 0.5em;
 	}
 
 /* Navigation */
 
-	nav {
-		position: absolute;
-		top: 0.5em;
+	.navbar {
 		width: auto;
-		float: right;
-		left: 72%;
+		background-color: #1F2F3F;
+	}
+
+	.navbar-nav {
+		margin: -4em 0 0 13em;
 	}
 
 	nav a {
 		position: relative;
 		display: inline-block;
-		margin: 2.5em 1em;
+		margin: 0.5em 1em;
 	 	outline: none;
 	 	color: #fff;
 	 	text-decoration: none;
@@ -229,6 +185,19 @@
 	nav a:focus {
 		outline: none;
 		text-decoration: none;
+	}
+
+	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+		background-color: #71A670;
+	}
+
+	.navbar-inverse .navbar-toggle {
+		border: none;
+	}
+
+	.navbar-toggle {
+		margin-top: 1.5em;
+		margin-right: 1em;
 	}
 
 /* Nav Hover Effect */
@@ -267,10 +236,12 @@
 
 	#hero-banner img {
 		width: 100%;
+		margin-top: 4.8em;
 	}
 
 	#hero-banner-mobile img {
 		width: 100%;
+		margin-top: 4.8em;
 	}
 
 /* What I Do */
@@ -286,28 +257,6 @@
 
 	.center p {
 		text-align: left;
-	}
-
-/* Meet The Desginer */
-
-	#about img {
-		width: 120px;
-		height: 120px;
-		border-radius: 100%;
-		float: left;
-		margin: -3em 1em 2em 1em;
-	}
-
-/* Work With Me */
-
-	#workwithme p {
-		text-align: left;
-	}
-
-/* Form*/
-
-	form {
-		padding: 0.8em;
 	}
 
 /*  Portfolio  */
@@ -381,6 +330,44 @@
 	    z-index: 2;
 	}
 
+
+/* Meet The Talent */
+
+	#about img {
+		width: 120px;
+		height: 120px;
+		border-radius: 100%;
+		float: left;
+		margin: -3em 1em 2em 1em;
+	}
+
+/* Work With Me */
+
+	#workwithme h3 em {
+		text-transform: none;
+	}
+
+	#workwithme h4 em {
+		text-transform: none;
+	}
+
+
+/* Form*/
+
+	.form {
+		padding: 10px;
+	}
+
+	label {
+		font-size: 0.75em;
+	}
+
+	#workwithme .bg-alt {
+		padding: 20px;
+		margin-bottom: 2em;
+	}
+
+
 /*  Footer  */
 
 	#footer p {
@@ -390,28 +377,43 @@
 
 /*  Responsive Web Design  */
 
-	/* Desktop and Tablet */
+	/* Desktop */
 
-		@media only screen and (min-width : 481px) {
+		@media only screen and (min-width : 769px) {
 			
 			#hero-banner-mobile {
 				display: none
 			}
+
 		}
 
-		@media(min-width:767px) {
-    		#portfolio .portfolio-item {
-        		margin: 0 0 30px;
-    		}
-		}
+	/* Tablet */
+	
+		@media only screen and (max-width : 768px) {
+			
+			#hero-banner-mobile {
+				display: none;
+			}
+
+			.navbar-nav {
+				margin: -4em 0 0 10.5em;
+			}
+
+			.navbar-nav li {
+				font-size: 60%;
+			}
+		}	
 
 	/* Extra Small Devices, Phones */ 
 
 		@media only screen and (max-width : 480px) {
 
-			nav {
-				float: none;
-				width: auto;
+			.container {
+				padding: 0;
+			}
+
+			.navbar-nav {
+				margin: 0 0 0 -1em;
 			}
 
 			#hero-banner {
@@ -420,22 +422,30 @@
 
 			.col-md-4 {
 				float: none;
-				width: auto;
+				width: 90%;
+				margin-left: 5%;
+				margin-right: 5%;
 			}
 
-		}
-
-	/* Custom, iPhone Retina */ 
-
-		@media only screen and (max-width : 320px) {
-
-			nav {
-				float: none;
-				width: auto;
+			#portfolio .portfolio-item {
+				margin: 0 1em 0.75em;
 			}
 
-			#hero-banner {
-				display: none;
+			#about .col-md-12 {
+				padding-left: 50px;
+				padding-right: 50px;
 			}
+
+			#about img {
+				width: 80px;
+				height: 80px;
+				border-radius: 100%;
+				float: left;
+				margin: 1em 1em 3em 0em;
+			}
+			
+			#workwithme h3 em, #workwithme h4 em {
+				font-size: 75%;
+			}		
 
 		}

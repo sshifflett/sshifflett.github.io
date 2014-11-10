@@ -28,22 +28,37 @@
  
 	<body>
 
-		<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
-				<h1 class="ohhellologo">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<a href="index.html">
-						<img src="images/oh-hello-convo-logo.png" alt="oh hello design">
+						<img class="ohhellologo" src="images/oh-hello-convo-logo.png" alt="oh hello design">
 					</a>
-				</h1>
-					<nav class="nav-effect">
-						<a href="#services">Services</a>
-						<a href="#portfolio">Portfolio</a>
-						<a href="#about">Meet the Talent</a>
-						<a href="#workwithme">Work With Me</a>
-					</nav>
+					<div class="collapse navbar-collapse nav-effect" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">	
+							<li>
+								<a href="#services">Services</a>
+							</li>
+							<li>
+								<a href="#portfolio">Portfolio</a>
+							</li>
+							<li>	
+								<a href="#about">Meet the Talent</a>
+							</li>
+							<li>
+								<a href="#workwithme">Work With Me</a>
+							</li>
+						</ul>	
+					</div>
 				</div>
 			</div>
-		</header>
+		</nav>
 		
 		<div id="hero-banner" class="bg">
 			<img class="img-responsive" src="images/herobanner.png" />
@@ -60,17 +75,17 @@
 					<div class="col-md-4 center">
 						<img src="images/features-icon-1.png">
 						<h4>Creative Design</h4>
-						<p>Lorem ipsum Excepteur dolor Duis qui irure reprehenderit labore commodo ut nisi adipisicing irure id nisi Ut laboris sunt est velit laboris sunt est.</p>
+						<p>I design beautiful web/mobile interfaces that are visually engaging and simplte to use.</p>
 					</div>
 					<div class="col-md-4 center">
 						<img src="images/features-icon-2.png">
 						<h4>Web Development</h4>
-						<p>Lorem ipsum Aute Duis elit cupidatat laborum nisi Excepteur dolor nisi tempor proident exercitation aliqua dolor aute nisi minim labore minim aliquip.</p>
+						<p>Using HTML5, CSS3, jQuery and RWD I build each project to meet the needs of the client.</p>
 					</div>
 					<div class="col-md-4 center">
 						<img src="images/features-icon-3.png">
-						<h4>Repsonsive Email Templates</h4>
-						<p>Lorem ipsum Ut cupidatat pariatur elit laboris id aliquip tempor dolor commodo nulla exercitation Excepteur est Duis Duis laborum elit exercitation.</p>
+						<h4>Research</h4>
+						<p>Understanding the needs of each individual project is vital in crafting the perfecy user experience.</p>
 					</div>
 				</div>	
 			</div>
@@ -82,6 +97,10 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-6 portfolio-item">
+					<div class="portfolio-caption">
+						<h4 class="small">Build Your Design</h4>
+						<p class="text-muted">Wireframes</p>
+					</div>		
 					<a href="/Unit2/designchallenge1.html" class="portfolio-link" target="_blank">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
@@ -90,12 +109,12 @@
 						</div>
 						<img src="images/Homepage.png" class="img-responsive" alt="">
 					</a>
-					<div class="portfolio-caption">
-						<h4>Build Your Design</h4>
-						<p class="text-muted">Wireframes</p>
-					</div>			
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
+					<div class="portfolio-caption">
+						<h4 class="small">Taasky Homepage</h4>
+						<p class="text-muted">App Landing Page</p>
+					</div>			
 					<a href="/Unit3/Taasky/index.html" class="portfolio-link" target="_blank">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
@@ -104,12 +123,12 @@
 						</div>
 						<img src="images/taasky.png" class="img-responsive" alt="">
 					</a>
-					<div class="portfolio-caption">
-						<h4>Taasky Homepage</h4>
-						<p class="text-muted">App Landing Page</p>
-					</div>			
 				</div>
 				<div class="col-md-4 col-sm-6 portfolio-item">
+					<div class="portfolio-caption">
+						<h4 class="small">one potato, two potato</h4>
+						<p class="text-muted">Web Design, Web Development</p>
+					</div>			
 					<a href="/Unit4/index.html" class="portfolio-link" target="_blank">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
@@ -118,52 +137,6 @@
 						</div>
 						<img src="images/onepotatotwopotato.png" class="img-responsive" alt="">
 					</a>
-					<div class="portfolio-caption">
-						<h4>One Potato, Two Potato Restaurant</h4>
-						<p class="text-muted">Web Design, Web Development</p>
-					</div>			
-				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/Unit5/styleguide.html" class="portfolio-link" target="_blank">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="images/full_oh-hello-style-guide.png" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>oh, hello web design</h4>
-						<p class="text-muted">Style Guide</p>
-					</div>			
-				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/Unit7/documents/Final-Mid-Term-Stephanie-Shifflett.pdf" class="portfolio-link" target="_blank">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="images/oh-hello-convo-logo-green.png" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>oh, hello web design</h4>
-						<p class="text-muted">Design Critique</p>
-					</div>			
-				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a href="/Unit10/email.html" class="portfolio-link" target="_blank">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fa fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img src="" class="img-responsive" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>oh, hello design newsletter</h4>
-						<p class="text-muted">Responsive Email Design</p>
-					</div>			
 				</div>
 			</div>
 		</div>	
@@ -171,48 +144,72 @@
 		<div id="about" class="bg-alt">
 			<div class="container">
 				<div class="row">
-					<h3 class="heading">Meet the Designer</h3>
-					<p><img src="images/headshot.jpg" width="98" height="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet.</p>
+					<h3 class="heading">Meet the Talent</h3>
+					<div class="col-md-12">
+						<img src="images/headshot.jpg" width="98" height="100">
+						<p>Hi there! My name is Stephanie. I'm a 30 year old web designer and developer. I love designing beautiful, clean and user-friendly interfaces for websites. I work hard to exceed expectations, mostly my own. I love being organized and professional. My passion is turning good ideas and products into eye-catching sites. I believe in goals and the power of a good cup of coffee.</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		
 		<div id="workwithme" class="container">
 			<div class="row">
-				<h3 class="heading">Heard Enough?</h3>
-				<div id="form">
-					<div class="container">
-			        	<form action="/my-form-page" method="post">
-			                <div class="form">
-			                	<label for="firstname"><strong>First Name:</strong></label>
-			                	<input type="text" id="firstname">
-			                </div>
-			                <div class="form">
-			                	<label for="lastname"><strong>Last Name:</strong></label>
-			                	<input type="text" id="lastname">
-			                </div>
-			                <div class="form">
-				            	<label for="mail"><strong>Email:</strong></label>
-				            	<input type="email" id="mail">
-				            </div>
-			                <div class="form">
-			               		<label for="msg"><strong>Tell me about your exciting project.</strong></label><br>
-								<textarea id="msg"></textarea>
-							</div>
-			               	<div class="form">
-			               		<input class="button-2" name="frmSubmit" value="Start the Conversation" type="submit">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
+				<h3 class="heading">Heard Enough? <em>Let's Chat</em></h3>
+				<h4><em>I'm available for freelance jobs. Contact me now.</em></h4>
+				<div class="col-lg-8 col-md-offset-2">
+            		<div class="bg-alt">
+                		<form id="contact-form">
+                			<div class="row">
+                    			<div class="col-md-6">
+                        			<div class="form-group">
+                            			<label for="name">Name</label>
+                            			<input type="text" class="form-control" id="name" placeholder="Enter name" required="required">
+                        			</div>
+                        			<div class="form-group">
+                            			<label for="email">Email Address</label>
+                            			<div class="input-group">
+                                			<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                			</span>
+                                			<input type="email" class="form-control" id="email" placeholder="Enter email" required="required">
+                                		</div>
+                        			</div>
+                        			<div class="form-group">
+                            			<label for="subject">Subject</label>
+                            			<select id="subject" name="subject" class="form-control" required="required">
+                                			<option value="na" selected="">Choose One:</option>
+                                			<option value="design">Creative Design</option>
+                                			<option value="development">Web Development</option>
+                                			<option value="emails">Email Template</option>
+                            			</select>
+                        			</div>
+                    			</div>
+                    			<div class="col-md-6">
+			                        <div class="form-group">
+			                            <label for="name">
+			                                Message</label>
+			                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+			                        </div>
+                    			</div>
+                    			<div class="col-md-12">
+                        			<button type="submit" class="btn btn-skin pull-right" id="btnContactUs">Send Message</button>
+                    			</div>
+                			</div>
+                		</form>
+            		</div>
+            	</div>
+            </div> 
 		</div>
+
+		<hr>
 		
 		<div id="footer" class="bg-alt">
 			<div class="container">
 				<div class="row">
-					<p>© 2014 oh, hello design</p>
-					<p>Coded with love in Richmond, VA</p>
+					<div class="col-sm-12">
+						<p>© 2014 oh, hello design</p>
+						<p>Coded with love in Richmond, VA</p>
+					</div>	
 				</div>
 			</div>	
 		</div>
