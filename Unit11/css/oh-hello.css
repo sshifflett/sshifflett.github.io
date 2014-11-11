@@ -4,7 +4,7 @@
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 		font-size: 20px;
-		line-height: 1.40;
+		line-height: 1.5;
 	}
 
 	.clear {
@@ -68,7 +68,7 @@
 /* Text */
 
 	p {
-		line-height: 1.2em;
+		line-height: 1.5em;
 		margin-bottom: 1em;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
@@ -234,7 +234,7 @@
 
 	#hero-banner img {
 		width: 100%;
-		margin-top: 4.8em;
+		margin-top: 3.8em;
 	}
 
 	#hero-banner-mobile img {
@@ -383,9 +383,17 @@
 			}
 
 			.col-md-12 {
-				padding-left: 50px;
-				padding-right: 50px;
+				padding-left: 150px;
+				padding-right: 150px;
 			}
+
+			#about img {
+				width: 150px;
+				height: 150px;
+				border-radius: 100%;
+				float: left;
+				margin: -0.5em 1.5em 1em 0em;
+			}			
 
 			h3 br {
 				display: none;
@@ -399,11 +407,7 @@
 			
 			.navbar-nav {
 				margin: -3.75em 0 0 11.5em;
-			}
-
-			#hero-banner img {
-				margin-top: 3.8em;
-			}			
+			}		
 
 			#hero-banner-mobile {
 				display: none;
@@ -444,10 +448,6 @@
 
 			nav a {
 				margin: 0.5em 0;
-			}
-
-			#hero-banner img {
-				margin-top: 3.8em;
 			}
 
 			#hero-banner-mobile {
