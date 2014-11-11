@@ -387,6 +387,10 @@
 				padding-right: 50px;
 			}
 
+			h3 br {
+				display: none;
+			}
+
 		}
 
 	/* Medium Display */
@@ -408,6 +412,7 @@
  			.col-md-12 {
 				padding-left: 50px;
 				padding-right: 50px;
+				float: none;
 			}
 
 			#about img {
@@ -417,6 +422,10 @@
 				float: left;
 				margin: -0.5em 1.5em 1em 0em;
 			}
+
+			h3 br {
+				display: none;
+			}			
 
 		}
 
@@ -456,6 +465,10 @@
 				border-radius: 100%;
 				float: left;
 				margin: -0.5em 1.5em 1em 0em;
+			}
+
+			h3 br {
+				display: none;
 			}			
 
 		}
